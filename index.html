@@ -11,7 +11,7 @@
         <!-- 카카오 공유하기 -->
         <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
         <script>
-        Kakao.init('코드입력');
+        Kakao.init('369253b16c4eb4fe95429e1850e9e51b');
         Kakao.isInitialized();
         </script>
 </head>
@@ -78,7 +78,7 @@
         </div>
         <div>
             <a href="javascript:setShare()"><img src="./img/icon-kakao.png" title="카카오톡" class="sharebtn_custom"/></a>
-        </div>
+        </div> 
 
     </section>
     <script src="./js/data.js"></script>
@@ -90,9 +90,9 @@
             const shareTitle = '나의 개발자 유형은 무엇일까? 나의 개발자 유형을 확인해보고 공유해보자!!';
             const shareDes=infoList[resultAlt].name;
             
-            const shareImage= 'html주소 입력' + 'img/title_img.png';
-            const shareURL = 'html주소 입력';
-            Kakao.Link.sendDefault({
+            const shareImage= 'https://likelionmbtiinsik.netlify.app' + 'img/title_img.png';
+            const shareURL = 'https://likelionmbtiinsik.netlify.app';
+            Kakao.Link.sendDefault({ //카카오톡에 공유하기
                 objectType: 'feed',
                 content: {
                 title: shareDes,
